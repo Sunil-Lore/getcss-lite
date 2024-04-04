@@ -1,0 +1,19 @@
+// getcss : An intuitive CSS framework
+// https://www.getcss.org
+// Licensed under MIT Open Source
+
+$zi:-5;
+@while $zi <= 5 {
+	.z-index-#{$zi}{
+		z-index:($zi*1);
+	}
+	$zi:$zi+1;
+}
+
+$zi2:100;
+@while $zi2 <= 1000 {
+	.z-index-#{$zi2}{
+		z-index:($zi2*1);
+	}
+	$zi2:$zi2+100;
+}

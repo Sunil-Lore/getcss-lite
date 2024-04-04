@@ -1,0 +1,24 @@
+// getcss : An intuitive CSS framework
+// https://www.getcss.org
+// Licensed under MIT Open Source
+
+$position:(absolute,fixed, relative, sticky,static);
+
+@each $pose in $position {
+	.position-#{$pose}{
+		position:#{$pose};
+	}
+}
+
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.fi{
+	float:inherit;
+}
+.fn{
+	float:none;
+}

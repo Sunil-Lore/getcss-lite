@@ -1,0 +1,15 @@
+// getcss : An intuitive CSS framework
+// https://www.getcss.org
+// Licensed under MIT Open Source
+
+$white-space:("wrap":"normal","nowrap":"nowrap");
+
+@each $key,$value in $white-space {
+	.#{$key}{
+		white-space:#{$value};
+	}
+}
+
+.word-break {
+	word-wrap:break-word;
+}

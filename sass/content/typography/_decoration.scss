@@ -1,0 +1,36 @@
+// getcss : An intuitive CSS framework
+// https://www.getcss.org
+// Licensed under MIT Open Source
+
+
+$deco-line:(overline,underline,line-through,none);
+
+@each $decoline in $deco-line {
+	.deco-#{$decoline}{
+		text-decoration-line:#{$decoline};
+	}
+}
+
+$deco-style:(solid,double,dotted,dashed,wavy);
+
+@each $decostyle in $deco-style {
+	.deco-#{$decostyle}{
+		text-decoration-style:#{$decostyle};
+	}
+}
+
+$decothickpx: 1;
+@while $decothickpx <= 10{
+	.deco-#{$decothickpx}-px{
+		text-decoration-thickness:($decothickpx*1px);
+	}
+	$decothickpx:$decothickpx+1;
+}
+
+$decothickpr: 1;
+@while $decothickpr <= 10{
+	.deco-#{$decothickpr}-pr{
+		text-decoration-thickness:($decothickpr*1%);
+	}
+	$decothickpr:$decothickpr+1;
+}

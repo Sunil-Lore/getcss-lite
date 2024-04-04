@@ -1,0 +1,31 @@
+// getcss : An intuitive CSS framework
+// https://www.getcss.org
+// Licensed under MIT Open Source
+
+.image-fluid{
+    width:100%;
+    height:auto;
+    display:block;
+    margin:0;
+}
+
+.image-flex{
+    max-width:100%;
+    height:auto;
+    display:block;
+    margin:0;
+}
+
+.image-gray,.image-grey{
+    filter: grayscale(100%);
+}
+
+.bg-size-contain{
+    background-size:contain;
+}
+.bg-size-cover{
+    background-size:cover;
+}
+.bg-size-100pr{
+    background-size:100% 100%;
+}
