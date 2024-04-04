@@ -1,5 +1,0 @@
-// getcss : An intuitive CSS framework
-// https://www.getcss.org
-// Licensed under MIT Open Source
-
-@import "flexbox","display","colors/colors";
